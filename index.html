@@ -85,7 +85,7 @@
         webgazer.begin();
         webgazer.setGazeListener((data, timeElapsed) => {
             if (data) {
-                fetch(`:3000/data?x=${data.x}&y=${data.y}`)
+                fetch(`https://23.22.112.247:3000/data?x=${data.x}&y=${data.y}`)
                 // http://localhost:3000
             }
         });
