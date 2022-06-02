@@ -85,7 +85,7 @@
         webgazer.begin();
         webgazer.setGazeListener((data, timeElapsed) => {
             if (data) {
-                fetch(`/EyeComplete/data?x=${data.x}&y=${data.y}`)
+                fetch(`/3000/data?x=${data.x}&y=${data.y}`)
                 // http://localhost:3000
             }
         });
