@@ -85,7 +85,7 @@
         webgazer.begin();
         webgazer.setGazeListener((data, timeElapsed) => {
             if (data) {
-                fetch(`https://23.22.112.247/EyeComplete/data?x=${data.x}&y=${data.y}`)
+                fetch(`/data?x=${data.x}&y=${data.y}`)
                 // http://localhost:3000
             }
         });
